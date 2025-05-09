@@ -22,7 +22,7 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
 
   return (
     <nav className="bg-white shadow-md">
-      <div className="mx-7  px-4">
+      <div className="mx-4 lg:mx-7 px-2 lg:px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
@@ -64,7 +64,7 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
           <div className="hidden md:flex items-center space-x-4">
             <Link
               to="/internships"
-              className="text-blue-600 font-medium px-3 py-2 rounded-md"
+              className="text-blue-600 font-medium px-3 py-2 rounded-md outline-1"
             >
               Internships
             </Link>
@@ -140,10 +140,11 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
                 </div>
               )}
             </div>
+            <div className="h-8 w-px bg-gray-300 mx-4"></div>
           </div>
 
           {/* Right Actions */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3 lg:space-x-4">
             {/* Messages */}
             <button className="text-gray-600 hover:text-blue-600">
               <svg
@@ -220,11 +221,13 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
                 </div>
               )}
             </div>
+            {/* <div className="h-8 w-px bg-gray-300 "></div> */}
+            
 
             
 
             {/* Host Button */}
-            <button className="hidden md:flex items-center bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-md font-medium hover:bg-gray-50">
+            <button className="hidden md:flex items-center bg-white border border-gray-300 text-gray-700 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full font-medium hover:bg-gray-50 text-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 mr-1"
@@ -243,10 +246,10 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
             </button>
 
             {/* Business Button */}
-            <button className="hidden md:flex items-center bg-yellow-100 border border-yellow-400 text-gray-800 px-4 py-2 rounded-md font-medium hover:bg-yellow-200">
+            <button className="hidden md:flex items-center bg-yellow-50 border border-yellow-400 text-gray-800 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full font-medium hover:bg-yellow-100 text-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 mr-1"
+                className="h-4 w-4 mr-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
