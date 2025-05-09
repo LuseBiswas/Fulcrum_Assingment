@@ -6,6 +6,7 @@ import img1 from '../../assets/login-img-1.webp'
 import img2 from '../../assets/login-img-2.webp'
 import img3 from '../../assets/login-img-3.webp'
 import img4 from '../../assets/login-img-4.webp'
+import { EyeOff, Eye } from "lucide-react";
 
 
 function Login() {
@@ -57,7 +58,7 @@ function Login() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
       {/* Main container with top and bottom rounded corners */}
-      <div className="w-full max-w-3xl max-h-[800px] bg-white rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-[65px] overflow-hidden shadow-lg flex">
+      <div className="w-full max-w-3xl max-h-[900px] bg-white rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-[65px] overflow-hidden shadow-lg flex">
         {/* Left Side - Promotional/Brand Section with matching rounded corners */}
         <div className="m-3 hidden md:flex md:w-1/2 bg-yellow-400 relative overflow-hidden rounded-tl-2xl rounded-tr-[65px]  rounded-bl-[65px]">
           <div
@@ -187,19 +188,9 @@ function Login() {
                     stroke="currentColor"
                   >
                     {showPassword ? (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
-                      />
+                      <Eye/>
                     ) : (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
+                      <EyeOff/>
                     )}
                   </svg>
                 </button>
