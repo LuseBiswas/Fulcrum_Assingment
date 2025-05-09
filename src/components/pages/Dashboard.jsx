@@ -37,19 +37,20 @@ function Dashboard() {
         <div className="bg-white p-6 rounded-lg  mb-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-1/2 mb-6 md:mb-0">
-              <h1 className="text-4xl font-bold text-blue-800 mb-4">Unlock Exposure</h1>
+              <h1 className="text-4xl font-bold text-[#1c4980] mb-4">Unlock <span className='text-4xl font-bold mb-4 text-black'>Exposure</span></h1>
               <p className="text-gray-600 mb-6">
                 Apply to a plethora of hiring opportunities & work with your dream companies!
               </p>
               <div className="flex space-x-4">
-                <button className="bg-blue-800 text-white px-6 py-3 rounded-md font-medium">
+                <button className="bg-blue-800 text-white px-6 py-3 rounded-full font-medium">
                   Find Internships
                 </button>
-                <button className="border border-blue-800 text-blue-800 px-6 py-3 rounded-md font-medium flex items-center">
-                  <span className="mr-2">Post Internships</span>
+                <button className="border border-blue-800 text-blue-800 px-6 py-3 rounded-full font-medium flex items-center">
+                  
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clipRule="evenodd" />
                   </svg>
+                  <span className="mr-2">Post Internships</span>
                 </button>
               </div>
             </div>
