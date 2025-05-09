@@ -52,23 +52,22 @@ function CategorySection() {
 
   return (
     <div className="mb-12">
-      <div className="flex items-center mb-6">
-        <h2 className="text-xl font-semibold text-gray-800">Internships Category</h2>
-      </div>
-      
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-        {categories.map((category) => (
-          <Link 
-            key={category.id}
-            to={`/internships/category/${category.id}`}
-            className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
-          >
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-800 mr-3">
-              {category.icon}
-            </div>
-            <span className="text-gray-700">{category.name}</span>
-          </Link>
-        ))}
+      <div className="flex items-center gap-4">
+        <h2 className="text-md font-medium text-[#383838] whitespace-nowrap">Internships <br />Category</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 flex-1">
+          {categories.map((category) => (
+            <Link 
+              key={category.id}
+              to={`/internships/category/${category.id}`}
+              className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-800 mr-3">
+                {category.icon}
+              </div>
+              <span className="text-gray-700">{category.name}</span>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
