@@ -95,7 +95,7 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
 
             <div className="relative">
               <button
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md flex items-center"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md flex items-center cursor-pointer"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 More
@@ -120,19 +120,19 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
                   <div className="py-1">
                     <Link
                       to="/resources"
-                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer"
                     >
                       Resources
                     </Link>
                     <Link
                       to="/events"
-                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer"
                     >
                       Events
                     </Link>
                     <Link
                       to="/courses"
-                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer"
                     >
                       Courses
                     </Link>
@@ -146,7 +146,7 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
           {/* Right Actions */}
           <div className="flex items-center space-x-3 lg:space-x-4">
             {/* Messages */}
-            <button className="text-gray-600 hover:text-blue-600">
+            <button className="text-gray-600 hover:text-blue-600 cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -164,7 +164,7 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
             </button>
 
             {/* Notifications */}
-            <button className="text-gray-600 hover:text-blue-600">
+            <button className="text-gray-600 hover:text-blue-600 cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -185,7 +185,7 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
             <div className="relative" ref={profileRef}>
               <button
                 onClick={() => setIsProfileOpen(!isProfileOpen)}
-                className="flex items-center focus:outline-none"
+                className="flex items-center focus:outline-none cursor-pointer"
               >
                 <div className="h-8 w-8 rounded-full bg-gray-300 overflow-hidden">
                   <img
@@ -201,19 +201,19 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
                   <div className="py-1">
                     <Link
                       to="/profile"
-                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer"
                     >
                       Your Profile
                     </Link>
                     <Link
                       to="/settings"
-                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer"
                     >
                       Settings
                     </Link>
                     <button
                       onClick={handleLogout}
-                      className="block w-full text-left px-4 py-2 text-red-600 hover:bg-red-100"
+                      className="block w-full text-left px-4 py-2 text-red-600 hover:bg-red-100 cursor-pointer"
                     >
                       Logout
                     </button>
@@ -227,7 +227,7 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
             
 
             {/* Host Button */}
-            <button className="hidden md:flex items-center bg-white border border-gray-300 text-gray-700 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full font-medium hover:bg-gray-50 text-sm">
+            <button className="hidden md:flex items-center bg-white border border-gray-300 text-gray-700 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full font-medium hover:bg-gray-50 text-sm cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -243,7 +243,7 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
             </button>
 
             {/* Business Button */}
-            <button className="hidden md:flex items-center bg-yellow-50 border border-yellow-400 text-gray-800 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full font-medium hover:bg-yellow-100 text-sm">
+            <button className="hidden md:flex items-center bg-yellow-50 border border-yellow-400 text-gray-800 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full font-medium hover:bg-yellow-100 text-sm cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4 mr-1"
