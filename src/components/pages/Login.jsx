@@ -75,10 +75,10 @@ function Login() {
             </div>
           </div>
 
-          <div className="relative z-10 p-12 flex flex-col justify-between h-full">
+          <div className="relative z-10  flex flex-col justify-between h-full">
             {/* Main content */}
             <div className="relative w-full h-full overflow-hidden mt-32">
-                <img src={img1} alt="" />
+                <img src={img1} alt="" className="w-[450px] h-[350px]"  />
             </div>
           </div>
         </div>
