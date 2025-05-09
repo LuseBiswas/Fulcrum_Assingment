@@ -228,10 +228,7 @@ function Navbar({ isProfileOpen, setIsProfileOpen, handleLogout }) {
 
             {/* Host Button */}
             <button className="hidden md:flex items-center bg-white border border-gray-300 text-gray-700 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full font-medium hover:bg-gray-50 text-sm">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 mr-1"
-                fill="none"
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
