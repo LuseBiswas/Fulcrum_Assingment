@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import unstop_logo from "../../assets/unstop-logo.svg";
+import login_img_1 from '../../assets/login-img-1.webp';
 import img1 from '../../assets/login-img-1.webp'
 import img2 from '../../assets/login-img-2.webp'
 import img3 from '../../assets/login-img-3.webp'
 import img4 from '../../assets/login-img-4.webp'
+
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -69,36 +71,14 @@ function Login() {
           <div className="absolute top-0 left-0 p-6 z-20">
             <div className="h-20 w-20">
               <img src={unstop_logo} alt="Unstop Logo" />
+              
             </div>
           </div>
 
           <div className="relative z-10 p-12 flex flex-col justify-between h-full">
             {/* Main content */}
-            <div className="mb-12">
-              <h2 className="text-4xl font-bold text-blue-900 mb-6">Learn</h2>
-              <p className="text-xl text-blue-900">from 200+ courses</p>
-
-              {/* Technology icons grid */}
-              <div className="grid grid-cols-3 gap-3 mt-8">
-                <div className="bg-white rounded-xl p-3 shadow-md w-16 h-16 flex items-center justify-center">
-                  <img src="/api/placeholder/40/40" alt="Python" />
-                </div>
-                <div className="bg-white rounded-xl p-3 shadow-md w-16 h-16 flex items-center justify-center">
-                  <img src="/api/placeholder/40/40" alt="AWS" />
-                </div>
-                <div className="bg-white rounded-xl p-3 shadow-md w-16 h-16 flex items-center justify-center">
-                  <img src="/api/placeholder/40/40" alt="React" />
-                </div>
-                <div className="bg-white rounded-xl p-3 shadow-md w-16 h-16 flex items-center justify-center">
-                  <img src="/api/placeholder/40/40" alt="SQL" />
-                </div>
-                <div className="bg-white rounded-xl p-3 shadow-md w-16 h-16 flex items-center justify-center">
-                  <img src="/api/placeholder/40/40" alt="Excel" />
-                </div>
-                <div className="bg-white rounded-xl p-3 shadow-md w-16 h-16 flex items-center justify-center">
-                  <img src="/api/placeholder/40/40" alt="SEO" />
-                </div>
-              </div>
+            <div className="relative w-full h-full overflow-hidden mt-32">
+                <img src={img1} alt="" />
             </div>
           </div>
         </div>
